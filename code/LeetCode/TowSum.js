@@ -8,10 +8,10 @@ var twoSum = function( nums, target ){
   let map = {};
   for(let i = 0; i < nums.length; i++){
     let preIndex = target - nums[i]
-    if( map[preIndex] == undefined ){
-      map[ nums[i] ] = i
-    }else{
+    if( map.hasOwnProperty(preIndex)){
       return [map[preIndex],i]
+    }else{
+      map[ nums[i] ] = i
     }
   }
 }
