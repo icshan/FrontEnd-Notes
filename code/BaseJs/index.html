@@ -1,0 +1,103 @@
+<script>
+  /**
+   * 父级：Programmer 子集： FrontEnd、BackEnd
+   * output: 
+   * 我是一名前端程序员，我的工作是用计算机编写应用程序，我每天工作10小时，我的工作需要用到HTML，CSS，JavaScript
+   * 我是一名后端程序员，我的工作是用计算机编写应用程序，我每天工作10小时，我的工作需要用到Node，Java，SQL。
+  */
+//   ;(function(_this){
+//     var Buffer = function(){}
+//     _this.inherit = function( Target, Origin){
+//       Buffer.prototype = Origin.prototype;
+//       Target.prototype = new Buffer();
+//       Target.constructor = Target;
+//       Target.super_class = Origin;
+//     }
+//   })(window);
+//   function Programmer () {
+    
+//   }
+//   Programmer.prototype = {
+//     name: '程序员',
+//     job : '计算机编写应用程序',
+//     jobTime: 10,
+//     say: function(){
+//       console.log(`我是一个${this.childName}${this.name},我的工作是用${this.job},我每天工作${this.jobTime}小时，我的工作需要用到${this.skill}`)
+//     }
+//   }
+//   function FrontEnd () {
+//     this.childName = '前端';
+//     this.skill = 'HTML,CSS,JavaScript';
+//   }
+
+//   function BackEnd () {
+//     this.childName = '后端';
+//     this.skill = 'Node，Java，SQL';
+//   }
+
+// inherit(FrontEnd, Programmer);
+// inherit(BackEnd, Programmer);
+
+// var front = new FrontEnd()
+// var end = new BackEnd()
+// front.say()
+// end.say()
+
+/**
+ * 深拷贝(deepClone)以及浅拷贝(clone)
+*/
+// var OrgObj = {
+//   name: 'kester',
+//   age: '20',
+//   sex: 'man',
+//   skill: ['HTML','CSS'],
+//   child: {
+//     name: 'kester child',
+//     age: '2',
+//     sex: 'women'
+//   }
+// }
+// // 浅拷贝
+// function clone( origin, target ){
+//   var target = target || {};
+//   for( var key in origin ){
+//     if( origin.hasOwnProperty(key) ){
+//       target[key] = origin[key]
+//     }
+//   }
+//   return target
+// }
+
+// // 深拷贝拷贝
+// function deepClone( origin, target ){
+//   var target = target || {},
+//       toStr = Object.prototype.toString,
+//       arrType = '[object Array]'
+
+//   for( var key in origin ){
+//     if( origin.hasOwnProperty(key) ){
+//       if( typeof origin[key] == 'object' && origin[key] !== null){
+//         toStr.call(origin[key]) === arrType ? target[key] = []
+//                                             : target[key] = {}
+//         deepClone(origin[key], target[key])
+//       }else{
+//         target[key] = origin[key]  
+//       }
+      
+//     }
+//   }
+//   return target
+// }
+
+
+// var cloneObj = clone(OrgObj)
+// var deepCloneObj = deepClone(OrgObj)
+// console.log(deepCloneObj)
+
+// cloneObj.name = 'kester is clone object'
+// deepCloneObj.skill[0] = 'vidio'
+
+// console.log(OrgObj)
+// console.log(cloneObj)
+// console.log(deepCloneObj)
+</script>
