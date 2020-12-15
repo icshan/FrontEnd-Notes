@@ -4,6 +4,7 @@
  * 去重函数：Unique Function
  * 
  * @param {*} origin 
+ * @return {array[]}
  * 解题思路：通过创建一个hashMap来存储唯一值，检测map中有相同的跳过，没有的话就塞入
  */
 var Unique = function ( origin ) {

@@ -4,6 +4,7 @@
  * tip：JSON.stringify  --->   JSON.parse   也是一种极端的方法
  * @param {*} origin 
  * @param {*} target 
+ * @return {array []}
  */
 function clone( origin, target ){
   var target = target || {};

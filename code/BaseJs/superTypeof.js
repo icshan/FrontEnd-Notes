@@ -1,6 +1,7 @@
 /**
  * Auth: kester
  * @param {*} origin 
+ * @return {string}
  */
 function myType ( origin ) {
   var type = typeof(origin),

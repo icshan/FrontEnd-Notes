@@ -1,6 +1,7 @@
 /**
  * Auth: kester
  * @param {*} s 
+ * @return {boolean}
  * LeedCode 20
  * 解题思路：将字符串中的字符依次入栈，遍历字符依次判断：
  * 1、首先判断该元素是否是 { 、 ( 、 [ ，直接入栈
