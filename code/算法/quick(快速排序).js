@@ -1,6 +1,10 @@
 /**
- * Auth： kester
+ * Author： kester
+ * 
+ * 快速排序 Quick Sort
+ * 
  * @param {*} origin 
+ * 
  * 解题思路：
  * 1、定义一个数组，装载排序后的元素
  * 2、找出中间项mid，在原数组中移除，定义左右数组leftArr、rightArr，将小于mid的元素放入leftArr中，大于mid的元素放入rightArr中

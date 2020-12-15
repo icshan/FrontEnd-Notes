@@ -172,22 +172,61 @@
 // console.log(isValid('{{[()]}}'))
 // console.log(isValid('({)'))
 
-var Quick = function ( origin ) {
-  if( origin.length <= 1) return origin
-  let target = [],
-      midIndex = Math.floor( origin.length / 2 ),
-      mid = origin.splice(midIndex, 1)[0],
-      leftArr = [],
-      rightArr = [];
-  for( let i = 0; i < origin.length; i++){
-    origin[i] < mid ? leftArr.push( origin[i] )
-                    : rightArr.push( origin[i] );
+// var Quick = function ( origin ) {
+//   if( origin.length <= 1) return origin
+//   let target = [],
+//       midIndex = Math.floor( origin.length / 2 ),
+//       mid = origin.splice(midIndex, 1)[0],
+//       leftArr = [],
+//       rightArr = [];
+//   for( let i = 0; i < origin.length; i++){
+//     origin[i] < mid ? leftArr.push( origin[i] )
+//                     : rightArr.push( origin[i] );
+//   }
+//   target = Quick(leftArr).concat(mid, Quick(rightArr));
+//   return target
+// }
+// // TEST
+// var arr = [2, 3, 45, 66, 78, 33];
+// console.log(Quick(arr))
+
+// var Insert = function ( origin ) {
+//   let target = [];
+//   // 随机放入一张牌，这里默认第一张
+//   target.push( origin[0] );
+//   // 从第二张开始遍历
+//   for( let i = 1; i < origin.length; i++){
+//     // 遍历手中的牌，进行作比较
+//     for( let j = target.length; j >= 0; j-- ){
+//       if( target[j] < origin[i] ){
+//         target.splice(j+1, 0, origin[i]);
+//         break;
+//       }
+//       j == 0 && target.unshift(origin[i])
+//     }
+//   }
+
+//   return target
+// }
+// // TEST
+// var arr = [2, 3, 45, 66, 78, 33];
+// console.log(Insert(arr))
+
+var Bubble = function ( origin ) {
+  // 对比的次数为length-1次，因为只需要将length-1个数排在数组的后面就行了
+  for( let i = 0; i < origin.length-1; i++){
+    // 控制每一轮比较的次数
+    for( let j = 0; j < origin,length - i - 1; j++){
+      if( origin[j] > origin[j+1] ){
+        [ origin[j], origin[j+1] ] = [ origin[j+1], origin[j] ]
+      }
+    }
+
   }
-  target = Quick(leftArr).concat(mid, Quick(rightArr));
-  return target
+  return origin
 }
 // TEST
 var arr = [2, 3, 45, 66, 78, 33];
-console.log(Quick(arr))
+console.log(Bubble(arr))
 
 </script>
