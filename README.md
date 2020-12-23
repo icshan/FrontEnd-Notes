@@ -11,7 +11,10 @@
 
 ### CSS基础
 
+
 ### JavaScript基础
+
+1. [15道ES6 Promise实战练习题，助你快速理解Promise](https://mp.weixin.qq.com/s/rslrMX_IPzB8RMjTh05nbw)
 
 ### 框架
 
