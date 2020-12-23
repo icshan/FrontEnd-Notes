@@ -1,8 +1,3 @@
-> 前言
->
-> * [如何看待前端，以及web前端知识体系大全（欢迎留言补充)](https://github.com/icshan/jjkester.github.io/blob/master/bolg1.md)
-
-
 # 以提出的问题方式延伸前端知识点
 
 通过大家以及网上的一些blog，以及平时看大家面试的一些问题，来剖析延伸前端知识点，从点到面的学习前端。
@@ -24,3 +19,4 @@
   - Webpack
 
   - GULP
+
