@@ -17,6 +17,7 @@ var removeNthFromEnd = function (head, n) {
   }
 
   while(n2 != null){
+    
     n1 = n1.next;
     n2 = n2.next;
   }
