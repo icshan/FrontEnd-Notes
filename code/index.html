@@ -251,36 +251,36 @@
 // console.log(LongString(test))
 
 
-// var threeSum = function (origin) {
-//     const result = [];
-//     // 数组排序
-//     const uniqueArr = Unique(origin);
-//     for( let i = 0; i < uniqueArr.length - 2; i++){
-//       if( i === 0 || uniqueArr[i] !== uniqueArr[i-1]){
-//         // 定义双指针 start end 往中间收缩
-//         let start = i + 1,end = uniqueArr.length - 1;
-//         while(start < end){
-//           if(uniqueArr[start] + uniqueArr[end] + uniqueArr[i] === 0){
-//             result.push([uniqueArr[i], uniqueArr[start], uniqueArr[end]]);
-//             start++;
-//             end--;
-//             while(start < end &&  uniqueArr[start] === nums[start - 1]){
-//               start++;
-//             }
-//             while(start < end && uniqueArr[end] === uniqueArr[end+1]){
-//               end--;
-//             }
-//           }else if(uniqueArr[start] + uniqueArr[end] + uniqueArr[i] < 0){
-//             start++;
-//           }else{
-//             end--;
-//           }
-//         }
-//       }
+var threeSum = function (origin) {
+    const result = [];
+    // 数组排序
+    const uniqueArr = Unique(origin);
+    for( let i = 0; i < uniqueArr.length - 2; i++){
+      if( i === 0 || uniqueArr[i] !== uniqueArr[i-1]){
+        // 定义双指针 start end 往中间收缩
+        let start = i + 1,end = uniqueArr.length - 1;
+        while(start < end){
+          if(uniqueArr[start] + uniqueArr[end] + uniqueArr[i] === 0){
+            result.push([uniqueArr[i], uniqueArr[start], uniqueArr[end]]);
+            start++;
+            end--;
+            while(start < end &&  uniqueArr[start] === nums[start - 1]){
+              start++;
+            }
+            while(start < end && uniqueArr[end] === uniqueArr[end+1]){
+              end--;
+            }
+          }else if(uniqueArr[start] + uniqueArr[end] + uniqueArr[i] < 0){
+            start++;
+          }else{
+            end--;
+          }
+        }
+      }
       
-//     }
-//     return result
-// }
-// console.log(threeSum([1,-1,0,1,-1,2]))
-// threeSum([1,-1,0,1,-1,2])
+    }
+    return result
+}
+console.log(threeSum([1,-1,0,1,-1,2]))
+threeSum([1,-1,0,1,-1,2])
 </script>
