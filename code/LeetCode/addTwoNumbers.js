@@ -3,11 +3,13 @@ function ListNode(val, next) {
   this.val = (val===undefined ? 0 : val)
   this.next = (next===undefined ? null : next)
 }
+
 /**
  * @param {ListNode} l1
  * @param {ListNode} l2
  * @return {ListNode}
  */
+
 var addTwoNumbers = function(l1, l2) {
       // 创建一个新的链表，这个链表即为返回的链表
       let node = new ListNode('head')
