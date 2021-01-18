@@ -12,7 +12,25 @@
  *  每个节点都要有一个元素（key），和左右指针(left、right)；
  * 二叉树类：
  *  需要一个跟节点（root）,需要一个插入节点方法（insert）
- * 
- * 
- * 
 */
+
+// 节点类
+class Node {
+  constructor(key) {
+  	//需要创建的元素
+    this.key = key
+    //左指针
+    this.left = null
+    //右指针
+    this.right = null
+  }
+}
+//二叉树类
+class BinarySearchTree {
+  constructor() {
+  	// 跟节点
+    this.root = null
+  }
+  //插入节点方法
+  insert(key) {}
+}
