@@ -59,15 +59,3 @@ function deepClonePro(target,map = new WeakMap()){
      return target;    
   }
 }
-
-
-var cloneObj = clone(OrgObj)
-var deepCloneObj = deepClone(OrgObj)
-console.log(deepCloneObj)
-
-cloneObj.name = 'kester is clone object'
-deepCloneObj.skill[0] = 'vidio'
-
-console.log(OrgObj)
-console.log(cloneObj)
-console.log(deepCloneObj)
