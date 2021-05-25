@@ -11,6 +11,8 @@
 
 1. [15道 ES6 Promise实战练习题，助你快速理解Promise](https://mp.weixin.qq.com/s/rslrMX_IPzB8RMjTh05nbw)
 
+2. [前端优化]
+
 ### 算法leetCode 
 ---
 > 字符串
@@ -57,3 +59,4 @@
 ### 网络
 
 - HTTP
+
