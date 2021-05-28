@@ -10,32 +10,22 @@
 ### JavaScript基础
 
 1. [15道 ES6 Promise实战练习题，助你快速理解Promise](https://mp.weixin.qq.com/s/rslrMX_IPzB8RMjTh05nbw)
-
-2. [前端优化]
-
+### 算法基础知识
+- [时间复杂度和空间复杂度](https://github.com/icshan/FrontEnd-Notes/issues/6)
 ### 算法leetCode 
 ---
 > 字符串
-- leetcode3：无重复字符的最长子串
+- [leetcode3：无重复字符的最长子串](https://github.com/icshan/FrontEnd-Notes/issues/2)
 
 > 数组
-- leetcode1：两数之和
-- leetcode15：三数之和
-
+- [leetcode1：两数之和](https://github.com/icshan/FrontEnd-Notes/issues/3)
+- [leetcode15：三数之和](https://github.com/icshan/FrontEnd-Notes/issues/4)
 > 链表
-
 > 栈
-- leetcode20：有效的括号
-
+- [leetcode20：有效的括号](https://github.com/icshan/FrontEnd-Notes/issues/5)
 > 队列
-
 > 哈希表
-
 > 二叉树
-
-- 二叉树的遍历
-- 重构二叉树
-- 二叉树进阶
 > 堆
 > 图
 > 排序算法
