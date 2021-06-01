@@ -8,8 +8,17 @@
 ### CSS基础
 
 ### JavaScript基础
+> 手写代码
+- [new原理实现](https://mp.weixin.qq.com/s/rslrMX_IPzB8RMjTh05nbw)
+- [instanceOf原理实现](https://mp.weixin.qq.com/s/rslrMX_IPzB8RMjTh05nbw)
+- [call原理实现](https://mp.weixin.qq.com/s/rslrMX_IPzB8RMjTh05nbw)
+- [apply原理实现](https://mp.weixin.qq.com/s/rslrMX_IPzB8RMjTh05nbw)
+- [bind原理实现](https://mp.weixin.qq.com/s/rslrMX_IPzB8RMjTh05nbw)
+- [实现一个myTypeOf, 来判断是否为object](https://mp.weixin.qq.com/s/rslrMX_IPzB8RMjTh05nbw)
+- [实现一个深拷贝](https://mp.weixin.qq.com/s/rslrMX_IPzB8RMjTh05nbw)
 
-1. [15道 ES6 Promise实战练习题，助你快速理解Promise](https://mp.weixin.qq.com/s/rslrMX_IPzB8RMjTh05nbw)
+> 实战演练
+1. [15道 ES6 Promise实战练习题，助你快速理解Promise](https://mp.weixin.qq.com/s/rslrMX_IPzB8RMjTh05nbw) 
 ### 算法基础知识
 - [时间复杂度和空间复杂度](https://github.com/icshan/FrontEnd-Notes/issues/6)
 ### 算法leetCode 
@@ -31,8 +40,11 @@
 > 排序算法
 > 查找算法
 > 动态规划
+[leetcode70：爬楼梯](https://github.com/icshan/FrontEnd-Notes/issues/7)
 > 贪心算法
 > 回溯算法
+> 其他
+[leetcode66：加一](https://github.com/icshan/FrontEnd-Notes/issues/8)
 
 ### 框架
 
