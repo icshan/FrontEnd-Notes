@@ -21,8 +21,11 @@
 
 
 > 实战演练
-1. [15道 ES6 Promise实战练习题，助你快速理解Promise](https://mp.weixin.qq.com/s/rslrMX_IPzB8RMjTh05nbw) 
-### 算法基础知识
+1. [15道 ES6 Promise实战练习题，助你快速理解Promise](https://mp.weixin.qq.com/s/rslrMX_IPzB8RMjTh05nbw)
+> 移动端开发的注意事项
+
+### 数据结构、算法以及时间、空间复杂度
+
 - [时间复杂度和空间复杂度](https://github.com/icshan/FrontEnd-Notes/issues/6)
 ### 算法leetCode 
 ---
@@ -44,6 +47,8 @@
 > 查找算法
 > 动态规划
 - [leetcode70：爬楼梯](https://github.com/icshan/FrontEnd-Notes/issues/7)
+- [leetcode509：斐波那契数](https://github.com/icshan/FrontEnd-Notes/issues/7)
+- [leetcode42：接雨水](https://github.com/icshan/FrontEnd-Notes/issues/8)
 > 贪心算法
 > 回溯算法
 > 其他
@@ -52,9 +57,9 @@
 ### 框架
 
 - Vue
-- [vue项目的性能优化](https://github.com/icshan/FrontEnd-Notes/issues/7)
+> [vue项目的性能优化](https://github.com/icshan/FrontEnd-Notes/issues/7)
 - React
-
+> [react与react-hooks](https://github.com/icshan/FrontEnd-Notes/issues/7)
 ### 工程化工具
 
 - Webpack
