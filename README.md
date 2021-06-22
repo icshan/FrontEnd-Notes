@@ -17,6 +17,7 @@
 - [实现一个myTypeOf, 来判断是否为object](https:...)
 - [实现一个深拷贝](https:...)
 - [实现一个axios](https://juejin.cn/post/6856706569263677447#heading-9)
+- [实现跨域的几种方式](https://juejin.cn/post/6856706569263677447#heading-9)
 
 
 
