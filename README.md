@@ -13,7 +13,7 @@
 - [instanceOf原理实现](https://github.com/icshan/FrontEnd-Notes/issues/12)
 - [call原理实现](https://github.com/icshan/FrontEnd-Notes/issues/13)
 - [apply原理实现](https://github.com/icshan/FrontEnd-Notes/issues/14)
-- bind原理实现
+- [bind原理实现](https://github.com/icshan/FrontEnd-Notes/issues/17)
 - [实现一个myTypeOf, 主要判断object](https://github.com/icshan/FrontEnd-Notes/issues/15)
 - [实现一个深拷贝](https://github.com/icshan/FrontEnd-Notes/issues/16)
 - 实现一个axios
