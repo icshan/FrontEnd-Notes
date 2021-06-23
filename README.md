@@ -9,15 +9,15 @@
 
 ### JavaScript基础
 > 手写代码
-- [new原理实现](https:...)
-- [instanceOf原理实现](https:...)
-- [call原理实现](https:...)
-- [apply原理实现](https:...)
-- [bind原理实现](https:...)
-- [实现一个myTypeOf, 来判断是否为object](https:...)
-- [实现一个深拷贝](https:...)
-- [实现一个axios](https://juejin.cn/post/6856706569263677447#heading-9)
-- [实现跨域的几种方式](https://juejin.cn/post/6856706569263677447#heading-9)
+- new原理实现
+- instanceOf原理实现
+- call原理实现
+- apply原理实现
+- bind原理实现
+- 实现一个myTypeOf, 来判断是否为object
+- 实现一个深拷贝
+- 实现一个axios
+- 实现跨域的几种方式
 
 
 
@@ -66,15 +66,15 @@
 - Webpack
 # Webpack
 
-1. [webpack是什么](https://github.com/icshan/FrontEnd-Notes/issues/7)
+1. webpack是什么
 
-2. [webpack的配置项](https://github.com/icshan/FrontEnd-Notes/issues/7)
+2. webpack的配置项
 
-3. [webpack原理](https://github.com/icshan/FrontEnd-Notes/issues/9)
+3. webpack原理
 
-4. [手写简易webpack](https://github.com/icshan/FrontEnd-Notes/issues/7)
+4. 手写简易webpack
 
-5. [使用webpack优化项目有哪些点](https://github.com/icshan/FrontEnd-Notes/issues/7)
+5. 使用webpack优化项目有哪些点
 
 6. [webpack常用面试题](https://github.com/icshan/FrontEnd-Notes/issues/10)
 
