@@ -9,9 +9,9 @@
 
 ### JavaScript基础
 > 手写代码
-- new原理实现
-- instanceOf原理实现
-- call原理实现
+- [new原理实现](https://github.com/icshan/FrontEnd-Notes/issues/11)
+- [instanceOf原理实现](https://github.com/icshan/FrontEnd-Notes/issues/12)
+- [call原理实现](https://github.com/icshan/FrontEnd-Notes/issues/13)
 - apply原理实现
 - bind原理实现
 - 实现一个myTypeOf, 来判断是否为object
