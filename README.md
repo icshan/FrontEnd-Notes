@@ -23,7 +23,6 @@
 
 > 实战演练
 1. [15道 ES6 Promise实战练习题，助你快速理解Promise](https://mp.weixin.qq.com/s/rslrMX_IPzB8RMjTh05nbw)
-> 移动端开发的注意事项
 
 ### 数据结构、算法以及时间、空间复杂度
 
@@ -41,19 +40,10 @@
 - [leetcode160. 相交链表](https://github.com/icshan/FrontEnd-Notes/issues/19)
 > 栈
 - [leetcode20：有效的括号](https://github.com/icshan/FrontEnd-Notes/issues/5)
-> 队列
-> 哈希表
-> 二叉树
-> 堆
-> 图
-> 排序算法
-> 查找算法
 > 动态规划
 - [leetcode70：爬楼梯](https://github.com/icshan/FrontEnd-Notes/issues/7)
 - [leetcode509：斐波那契数](https://github.com/icshan/FrontEnd-Notes/issues/7)
 - [leetcode42：接雨水](https://github.com/icshan/FrontEnd-Notes/issues/8)
-> 贪心算法
-> 回溯算法
 > 其他
 - [leetcode66：加一](https://github.com/icshan/FrontEnd-Notes/issues/8)
 
@@ -79,8 +69,6 @@
 5. 使用webpack优化项目有哪些点
 
 6. [webpack常用面试题](https://github.com/icshan/FrontEnd-Notes/issues/10)
-
-- GULP
 
 ### 网络
 
