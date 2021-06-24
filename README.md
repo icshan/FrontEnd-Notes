@@ -37,8 +37,8 @@
 - [leetcode1：两数之和](https://github.com/icshan/FrontEnd-Notes/issues/3)
 - [leetcode15：三数之和](https://github.com/icshan/FrontEnd-Notes/issues/4)
 > 链表
--[leetcode146. LRU 缓存机制](https://github.com/icshan/FrontEnd-Notes/issues/18)
--[leetcode160. 相交链表](https://github.com/icshan/FrontEnd-Notes/issues/19)
+- [leetcode146. LRU 缓存机制](https://github.com/icshan/FrontEnd-Notes/issues/18)
+- [leetcode160. 相交链表](https://github.com/icshan/FrontEnd-Notes/issues/19)
 > 栈
 - [leetcode20：有效的括号](https://github.com/icshan/FrontEnd-Notes/issues/5)
 > 队列
