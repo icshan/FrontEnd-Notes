@@ -363,21 +363,109 @@
 //   }
 //   return res
 // }
-class XhrHook {
-  constructor(beforeHooks = {}, afterHooks = {}){
-    this.xhr = window.XMLHttpRequest;
-    this.beforeHooks = beforeHooks;
-    this.afterHooks = afterHooks;
-    this.init();
-  }
+// class XhrHook {
+//   constructor(beforeHooks = {}, afterHooks = {}){
+//     this.xhr = window.XMLHttpRequest;
+//     this.beforeHooks = beforeHooks;
+//     this.afterHooks = afterHooks;
+//     this.init();
+//   }
 
-  init(){
-    let _this = this
-    window.XMLHttpRequest = function(){
-      this._xhr = new _this.xhr();
+//   init(){
+//     let _this = this
+//     window.XMLHttpRequest = function(){
+//       this._xhr = new _this.xhr();
+//     }
+//   }
+
+// }
+
+function MyPromise(excutor){
+  // 初始化状态  pending
+  this.status = 'pending';
+  // 用户存储promise结果的属性
+  this.data = undefined;
+  // 每个元素的结构为{ onResolved(){}, onRejected(){} }
+  this.callBacks = [];
+  let _self = this;
+  function resolve(value){
+    if(_self.status !== 'pending') return ;
+    // 将状态改成 resolve
+    _self.status = 'resolve';
+    // 保存value数据
+    _self.data = value;
+    // 如果有待执行的callBack函数，立即异步执行onResolved
+    if(_self.callBacks.length > 0){
+      setTimeout(()=>{
+        _self.callBacks.forEach(callBackObj => {
+          callBackObj.onResolved(value);
+        })
+      })
     }
   }
+  function reject(reason){
+    if(_self.status !== 'pending') return ;
+    // 将状态改成 resolve
+    _self.status = 'reject';
+    // 保存value数据
+    _self.data = value;
+    // 如果有待执行的callBack函数，立即异步执行onResolved
+    if(_self.callBacks.length > 0){
+      setTimeout(()=>{
+        _self.callBacks.forEach(callBackObj => {
+          callBackObj.onRejected(value);
+        })
+      })
+    }
+  }
+  // 如果执行器抛出异常，promise对象变成rejected
+  try {
+    // 立即同步执行excutor
+    excutor(resolve, reject);
+  } catch (error) {
+    reject(error)
+  }
+  
+}
+
+// 指定成功和失败的回调函数
+// 返回一个新的promise
+MyPromise.prototype.then = function (onResolved, onRejected){
+  if(this.status !== 'pending') return;
+  // 假设状态为pending
+  this.callBacks.push({
+    onResolved,
+    onRejected
+  })
+}
+// 指定失败的回调函数
+// 返回一个新的promise
+MyPromise.prototype.catch = function (){
 
 }
+// 返回一个promise，只有所有的promises都成功，才返回成功的，否则失败
+MyPromise.all = function(promises){
+
+}
+// 返回一个promise，其结果由第一个完成结果来决定
+MyPromise.rase = function(){
+
+}
+// 返回一个失败promise
+MyPromise.reject = function (){
+
+}
+// 返回一个指定结果成功promise
+MyPromise.resolve = function (){
+
+}
+
+
+new MyPromise((resolve, reject) => {
+  resolve('成功')
+  console.log('执行器函数')
+})
+
+
 
 </script>
