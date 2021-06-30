@@ -5,6 +5,8 @@ const vm = new Vue({
   data:{
     msg: 'hello'
   },
+
+  
   methods: {
     init(){
       console.log('init func !')
