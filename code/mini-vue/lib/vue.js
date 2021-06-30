@@ -1,3 +1,5 @@
+import Observer from './observer.js'
+import Compiler from './compiler.js'
 /**
  * Vue的构造函数，包括接受各种配置参数等 
  * @export
@@ -11,8 +13,15 @@ export default class Vue {
     this.$methods = options.methods;
     // 初始化根元素
     this.initRootElement(options)
+    
     // 将options.data代理到vue实例上
     this._proxyData(this.$data)
+
+    // 实例化Observer对象，监听数据变化
+    new Observer(this.$data);
+
+    // 实例化Compiler对象，解析指令和模板表达式
+    new Compiler(this);
   }
   /**
    * 获取根元素，并存储到vue实例上，检查是否传入的el是合格
