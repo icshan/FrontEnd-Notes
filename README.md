@@ -49,13 +49,13 @@
 
 ### 框架
 
-- Vue
-> [vue项目的性能优化](https://github.com/icshan/FrontEnd-Notes/issues/7)
-> [实现一个mini-vue]
-> [实现一个mini-vue，class版本](https://github.com/icshan/FrontEnd-Notes/issues/21)
-> [实现一个mini-vuex](https://github.com/icshan/FrontEnd-Notes/issues/20)
-- React
-> [react与react-hooks](https://github.com/icshan/FrontEnd-Notes/issues/7)
+> Vue
+- [vue项目的性能优化](https://github.com/icshan/FrontEnd-Notes/issues/7)
+- [实现一个mini-vue]
+- [实现一个mini-vue，class版本](https://github.com/icshan/FrontEnd-Notes/issues/21)
+- [实现一个mini-vuex](https://github.com/icshan/FrontEnd-Notes/issues/20)
+> React
+- [react与react-hooks](https://github.com/icshan/FrontEnd-Notes/issues/7)
 ### 工程化工具
 
 - Webpack
