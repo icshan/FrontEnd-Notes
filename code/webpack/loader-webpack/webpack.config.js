@@ -33,6 +33,16 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'author-loader',
+          options: {
+            text: 'kester',
+            filename: path.resolve(__dirname, 'author.js')
+          }
+        },
+      },
     ],
   },
 };
