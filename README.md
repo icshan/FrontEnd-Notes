@@ -56,6 +56,7 @@
 - [实现一个mini-vue]
 - [实现一个mini-vue，class版本](https://github.com/icshan/FrontEnd-Notes/issues/21)
 - [实现一个mini-vuex](https://github.com/icshan/FrontEnd-Notes/issues/20)
+- [vue 的面试题](https://www.bilibili.com/video/BV11E411x74r?p=1)
 > React
 - [react与react-hooks](https://github.com/icshan/FrontEnd-Notes/issues/7)
 ### 工程化工具
@@ -78,4 +79,5 @@
 ### 网络
 
 - HTTP
+
 
