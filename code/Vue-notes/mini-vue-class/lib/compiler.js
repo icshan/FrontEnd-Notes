@@ -10,7 +10,6 @@ export default class Compiler{
   compile(el){
     const childNodes = el.childNodes;
     Array.from(childNodes).forEach(node => {
-      
       if(this.isTextNode(node)){
         // 文本节点
         this.compileText(node)
@@ -22,9 +21,6 @@ export default class Compiler{
       if(node.childNodes && node.childNodes.length > 0){
         this.compile(node);
       }
-      
-
-      
     })
   }
   /** 编译元素节点 */
@@ -39,7 +35,6 @@ export default class Compiler{
           // 更新元素节点
           this.update(node, key, directiveName);
         }
-
       })
     }
   }
