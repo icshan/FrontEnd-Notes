@@ -14,7 +14,7 @@ var concatenatedBinary1 = function(n) {
   return parseInt(sum, 2);
 };
 /**
- * 
+ * 连接连续二进制数字
  * @param {*} n 
  * @returns 
  * 案例：
