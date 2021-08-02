@@ -16,7 +16,7 @@ var maxArea = function(height) {
     if(height[left] > height[right]){
       right--;
     }else{
-        left++;
+      left++;
     }
   }
 
