@@ -380,92 +380,64 @@
 
 // }
 
-function MyPromise(excutor){
-  // 初始化状态  pending
-  this.status = 'pending';
-  // 用户存储promise结果的属性
-  this.data = undefined;
-  // 每个元素的结构为{ onResolved(){}, onRejected(){} }
-  this.callBacks = [];
-  let _self = this;
-  function resolve(value){
-    if(_self.status !== 'pending') return ;
-    // 将状态改成 resolve
-    _self.status = 'resolve';
-    // 保存value数据
-    _self.data = value;
-    // 如果有待执行的callBack函数，立即异步执行onResolved
-    if(_self.callBacks.length > 0){
-      setTimeout(()=>{
-        _self.callBacks.forEach(callBackObj => {
-          callBackObj.onResolved(value);
-        })
-      })
+// 原地建堆
+//  节点 i 父节点 i/2  左子 2i  右子 2i+1
+// function buildHeap(items, heapSize) {
+//   while(heapSize < items.length - 1) {
+//       heapSize ++
+//       heapify(items, heapSize)
+//   }
+// }
+
+// function heapify(items, i) {
+//   console.log(i)
+//   // 自下而上式堆化
+//   while (Math.floor(i/2) > 0 && items[i] < items[Math.floor(i/2)]) {  
+//       swap(items, i, Math.floor(i/2)); // 交换 
+//       i = Math.floor(i/2); 
+//   }
+// }  
+
+// function swap(items, i, j) {
+//   let temp = items[i]
+//   items[i] = items[j]
+//   items[j] = temp
+// }
+
+// // 测试
+// var items = [,3,2,3,1,2,4,5,5,6]
+// // 初始有效序列长度为 1
+// buildHeap(items, 1)
+// console.log(items)
+// // [empty, 1, 2, 3, 5, 4]
+
+function buildHeap(items, heapSize){
+  for(let i = Math.floor(heapSize/2); i >= 1; --i){
+    heapify(items, heapSize, i);
+  }
+}
+// 自上而下式堆化
+function heapify(items, heapSize, i){
+  while(true){
+    let minIndex = i;
+    if(i*2 <= heapSize && items[2*i] < items[i]){
+      minIndex = 2*i
     }
-  }
-  function reject(reason){
-    if(_self.status !== 'pending') return ;
-    // 将状态改成 resolve
-    _self.status = 'reject';
-    // 保存value数据
-    _self.data = value;
-    // 如果有待执行的callBack函数，立即异步执行onResolved
-    if(_self.callBacks.length > 0){
-      setTimeout(()=>{
-        _self.callBacks.forEach(callBackObj => {
-          callBackObj.onRejected(value);
-        })
-      })
+    if(i*2+1 <= heapSize && items[2*i+1] < items[minIndex]){
+      minIndex = 2*i+1
     }
+    if(minIndex === i) break;
+    swap(items, i, minIndex);
+    i = minIndex;
   }
-  // 如果执行器抛出异常，promise对象变成rejected
-  try {
-    // 立即同步执行excutor
-    excutor(resolve, reject);
-  } catch (error) {
-    reject(error)
-  }
-  
 }
-
-// 指定成功和失败的回调函数
-// 返回一个新的promise
-MyPromise.prototype.then = function (onResolved, onRejected){
-  if(this.status !== 'pending') return;
-  // 假设状态为pending
-  this.callBacks.push({
-    onResolved,
-    onRejected
-  })
+// 交换
+function swap(items, i, minIndex){
+  let temp = items[i];
+  items[i] = items[minIndex];
+  items[minIndex]=  temp
 }
-// 指定失败的回调函数
-// 返回一个新的promise
-MyPromise.prototype.catch = function (){
-
-}
-// 返回一个promise，只有所有的promises都成功，才返回成功的，否则失败
-MyPromise.all = function(promises){
-
-}
-// 返回一个promise，其结果由第一个完成结果来决定
-MyPromise.rase = function(){
-
-}
-// 返回一个失败promise
-MyPromise.reject = function (){
-
-}
-// 返回一个指定结果成功promise
-MyPromise.resolve = function (){
-
-}
-
-
-new MyPromise((resolve, reject) => {
-  resolve('成功')
-  console.log('执行器函数')
-})
-
-
-
+let arr = [,5,2,3,4,1]
+buildHeap(arr, arr.length-1)
+console.log(arr)
 </script>
