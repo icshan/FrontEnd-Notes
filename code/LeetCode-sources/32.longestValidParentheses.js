@@ -5,8 +5,8 @@
  var longestValidParentheses = function (s) {
   const expand = (s, l, r) => {
       while (s[l - 1] === '(' && s[r + 1] === ')') {
-          l--;
-          r++;
+        l--;
+        r++;
       }
       return [l, r];
   };
@@ -36,6 +36,6 @@
       // 更新最大窗口
       max = Math.max(max, r - l + 1);
   }
-
   return max;
 };
+

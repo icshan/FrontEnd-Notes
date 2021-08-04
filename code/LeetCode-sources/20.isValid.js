@@ -31,3 +31,22 @@ var isValid = function ( s ) {
 // TEST
 console.log(isValid('{{[()]}}'))
 console.log(isValid('({)'))
+
+function isValid (res){
+  let stack = [],
+      resMap = {
+        '{': '}',
+        '(':')',
+        '[':']'
+      }
+  let l = 0;
+  while(l < res.length - 1){
+    if(resMap[res[l]]){
+      stack.push(resMap[res[l]])
+    }else if( res[l] != resMap[stack.pop()]){
+      return false
+    }
+    i++;
+  }
+  return stack.length === 0
+}
