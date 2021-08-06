@@ -53,7 +53,7 @@ DoubleLinkedList.prototype.removeBeforeTail = function(){
 /**
  * @param {number} capacity
  */
- var LRUCache = function(capacity) {
+var LRUCache = function(capacity) {
   // 保存 capacity
   this.capacity = capacity;
 
